@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>符合选择器</title>
+    <style>
+         /* 后代选择器 */
+         p a{
+            color: antiquewhite;
+        }
+        /* 亲儿子选择器 */
+        p>a{
+            color: blue;
+        }
+
+        /* 并集选择器  */
+        p,a{
+            color: burlywood;
+        }
+        /*（ ：） 伪类选择器是用于某些选择器添加特殊得效果 */
+        /* 链接伪类  记忆方法：lova hate  */
+        a:link{
+            color: aquamarine;
+            /* 未访问的链接 */
+        }
+        a:visited{
+            color: beige;
+            /* 访问过的 */
+        }
+        a:hover{
+            color: blue;
+            /* 鼠标经过 */
+        }
+        a:active{
+            color: burlywood;
+            /* 鼠标按下还没有弹起鼠标的那个链接 */
+        }
+
+        /* 大部分这样 */
+        a{
+            color: black;
+        }
+        a:hover{
+            color: blue;
+            /* 鼠标经过 */
+        }
+
+
+        /* 2，input:focus伪类选择器：用来选取获得焦点的表单元素 */
+        input:focus{
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+</html>
